@@ -1,8 +1,8 @@
 import './style.css';
 
 function component() {
-  var element = document.createElement('div');
-  var button = document.createElement('button');
+  const element = document.createElement('div');
+  const button = document.createElement('button');
 
   element.innerHTML = 'Hello, webpack!';
   element.classList.add('hello');

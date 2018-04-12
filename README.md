@@ -42,6 +42,12 @@ $ touch site.webmanifest
 
 ## ESLint
 
+```
+$ npm i -D eslint
+$ ./node_modules/.bin/eslint --init
+$ touch .eslintignore
+```
+
 ## Babel
 
 ## Jest

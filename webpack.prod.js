@@ -1,5 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const merge = require('webpack-merge');
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const common = require('./webpack.common');
 
 module.exports = merge(common, {
@@ -7,8 +8,8 @@ module.exports = merge(common, {
   devtool: 'source-map',
   plugins: [
     new ExtractTextPlugin({
-      filename: '[name].css'
-    })
+      filename: '[name].css',
+    }),
   ],
   module: {
     rules: [
@@ -16,9 +17,9 @@ module.exports = merge(common, {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader']
-        })
+          use: ['css-loader'],
+        }),
       },
-    ]
-  }
+    ],
+  },
 });
