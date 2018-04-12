@@ -80,11 +80,44 @@ Documentation: https://facebook.github.io/jest/docs/en/getting-started.html
 ## React
 
 ```
-$ npm i -S react react-dom
+$ npm i -S react react-dom prop-types
 ```
 
 * Renamed `src/index.js` to `src/index.jsx`
 * Changed `webpack.common.js` to `test: /\.jsx?$/,`
 * Changed `webpack.common.js` entry to `index.jsx`
 
+```javascript
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import './style.css';
+
+class MyComponent extends Component {
+  constructor() {
+    super();
+    this.state = {
+      title: 'My app',
+    };
+  }
+
+  render() {
+    return (
+      <div>Hello!!!!!!! {this.state.title}</div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <MyComponent />,
+  document.getElementById('root'),
+);
+```
+
 ## Redux
+
+```
+$ npm i -S redux redux-saga react-router-dom react-redux
+```
+
+* src
+  - [index.jsx](./src/index.jsx)
