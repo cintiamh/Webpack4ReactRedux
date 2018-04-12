@@ -51,6 +51,7 @@ $ npm i -D eslint-loader
 
 * [.eslintignore](.eslintignore)
 * [.eslintrc.js](.eslintrc.js)
+* [webpack.common.js](webpack.common.js)
 
 ## Babel
 
