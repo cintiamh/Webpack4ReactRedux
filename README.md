@@ -116,12 +116,7 @@ ReactDOM.render(
 ## Redux
 
 ```
-$ npm i -S redux redux-saga react-router react-redux history
-$ touch src/routes.js
-$ mkdir src/containers
-$ touch src/containers/App.js
-$ mkdir src/components
-$ touch src/components/HomePage.js
+$ npm i -S redux redux-saga react-router-dom react-redux
 ```
 
 * src
