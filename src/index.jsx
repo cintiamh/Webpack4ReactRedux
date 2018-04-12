@@ -1,26 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import './style.css';
+import { Router } from 'react-router';
+import createBrowserHistory from 'history/createBrowserHistory';
+import routes from './routes';
 
-class MyComponent extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      title: 'My app',
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        Hello!!!!!!! {this.state.title}
-      </div>
-    );
-  }
-}
+const history = createBrowserHistory();
 
 ReactDOM.render(
-  <MyComponent />,
+  <Router history={history} routes={routes} />,
   document.getElementById('root'),
 );

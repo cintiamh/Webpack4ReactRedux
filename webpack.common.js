@@ -6,18 +6,37 @@ module.exports = {
   entry: {
     app: './src/index.jsx',
   },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Production',
       template: 'src/index.html',
     }),
   ],
-  output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [
+          "babel-loader",
+          "eslint-loader",
+        ],
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: [
+          "babel-loader",
+          "eslint-loader",
+        ],
+      },
       {
         test: /\.html$/,
         loader: 'html-loader',
@@ -29,14 +48,6 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: ['file-loader'],
-      },
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: [
-          "babel-loader",
-          "eslint-loader",
-        ],
       },
     ],
   },
