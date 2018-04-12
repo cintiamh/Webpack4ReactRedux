@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/index.js',
+    app: './src/index.jsx',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -31,7 +31,7 @@ module.exports = {
         use: ['file-loader'],
       },
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: [
           "babel-loader",

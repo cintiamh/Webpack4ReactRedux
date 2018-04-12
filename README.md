@@ -79,4 +79,12 @@ Documentation: https://facebook.github.io/jest/docs/en/getting-started.html
 
 ## React
 
+```
+$ npm i -S react react-dom
+```
+
+* Renamed `src/index.js` to `src/index.jsx`
+* Changed `webpack.common.js` to `test: /\.jsx?$/,`
+* Changed `webpack.common.js` entry to `index.jsx`
+
 ## Redux
