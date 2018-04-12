@@ -22,6 +22,7 @@ $ npm i -D webpack webpack-cli
 $ npm i -D webpack-dev-server
 $ npm i -D style-loader css-loader file-loader csv-loader xml-loader html-loader
 $ npm i -D html-webpack-plugin clean-webpack-plugin
+$ npm i -D extract-text-webpack-plugin@next
 $ npm i -D webpack-merge
 $ touch webpack.common.js
 $ touch webpack.dev.js
