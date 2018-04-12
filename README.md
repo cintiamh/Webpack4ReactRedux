@@ -55,6 +55,14 @@ $ npm i -D eslint-loader
 
 ## Babel
 
+```
+$ npm i -D "babel-loader@^8.0.0-beta" @babel/core @babel/preset-env
+$ touch .babelrc
+```
+
+* [.babelrc](.babelrc)
+* [webpack.common.js](webpack.common.js)
+
 ## Jest
 
 ## React
