@@ -56,7 +56,7 @@ $ npm i -D eslint-loader
 ## Babel
 
 ```
-$ npm i -D "babel-loader@^8.0.0-beta" @babel/core @babel/preset-env
+$ npm i -D "babel-loader@^8.0.0-beta" @babel/core @babel/preset-env @babel/preset-react
 $ touch .babelrc
 ```
 
@@ -64,6 +64,18 @@ $ touch .babelrc
 * [webpack.common.js](webpack.common.js)
 
 ## Jest
+
+```
+$ npm i -D jest
+$ npm i -D babel-jest regenerator-runtime 'babel-core@^7.0.0-0'
+$ mkdir test
+$ touch test/index.test.js
+$ touch jest.config.js
+```
+
+* [jest.config.js](jest.config.js)
+
+Documentation: https://facebook.github.io/jest/docs/en/getting-started.html
 
 ## React
 
