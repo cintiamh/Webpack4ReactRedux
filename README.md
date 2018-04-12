@@ -46,7 +46,11 @@ $ touch site.webmanifest
 $ npm i -D eslint
 $ ./node_modules/.bin/eslint --init
 $ touch .eslintignore
+$ npm i -D eslint-loader
 ```
+
+* [.eslintignore](.eslintignore)
+* [.eslintrc.js](.eslintrc.js)
 
 ## Babel
 
