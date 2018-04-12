@@ -7,14 +7,7 @@ $ npm init -y
 $ touch .gitignore
 ```
 
-.gitignore
-```
-.DS_Store
-node_modules
-dist
-.idea
-*.iml
-```
+[.gitignore](.gitignore)
 
 ## Basic webpack
 
@@ -39,6 +32,12 @@ $ touch src/style.css
 $ touch src/index.html
 $ touch site.webmanifest
 ```
+
+* [webpack.common.js](webpack.common.js)
+* [webpack.dev.js](webpack.dev.js)
+* [webpack.prod.js](webpack.prod.js)
+* src
+  - [index.html](src/index.html)
 
 ## ESLint
 
